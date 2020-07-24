@@ -7,47 +7,46 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Sky Blue Background",
+  "line": 10,
+  "name": "Sky white Background",
   "description": "",
-  "id": "to-test-the-background-color-change;sky-blue-background",
+  "id": "to-test-the-background-color-change;sky-white-background",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "Set SkyBlue Background button exists",
+  "line": 11,
+  "name": "Set Skywhite Background button exists",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 12,
   "name": "I click on the button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "the background color will change to sky blue",
+  "line": 13,
+  "name": "the background color will change to white",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "SkyBlue.set_SkyBlue_Background_button_exists()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 5004280999,
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.match({
   "location": "SkyBlue.i_click_on_the_button()"
 });
 formatter.result({
-  "duration": 301030400,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.match({
-  "location": "SkyBlue.the_background_color_will_change_to_sky_blue()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 43601,
-  "status": "passed"
+  "status": "undefined"
 });
 });
